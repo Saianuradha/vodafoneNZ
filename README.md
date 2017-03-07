@@ -7,32 +7,8 @@ Framework being developed to perform testing of Vodafone NZ website and can also
 This repository consists of the framework with a feature file to test the login functionality of Vodafone NewZealand website. Login.feature file is written in Gherkin language and placed in the ‘feature' folder. Report will be generated in target/Destination folder as index.html file after running the tests.
 
 Project structure:
-- drivers folder
-    * chromedriver.exe
-- feature folder
-    - Login.feature
-- src folder
-    - main/java folder
-        -  pages
-          * HomePage.java
-          * MyVodafonePage.java
-          * SignInPage.java
-        -  steps
-          * LoginSteps.java
-        -  utils
-          * DriverUtil.java
-          * Utilities.java   
-    - test/java folder
-        - runner
-          * TestRunner.java
-- target folder
-    - Destination
-          * formatter.js
-          * index.html
-          * jquery-1.8.2.min.js
-          * report.js
-          * style.css
-- pom.xml 
+
+![alt tag](https://cloud.githubusercontent.com/assets/26199027/23644738/a6b6e7ca-036d-11e7-8210-cff22567cd2e.png)
 
 Tools and practices used while developing framework:
 - Editor: Eclipse IDE
@@ -52,6 +28,8 @@ Tools and practices used while developing framework:
 #Running Tests and Report accessing
 
 - Run the project as Maven test (Right click on pom.xml and Run as Maven test).
+
 ![alt tag](https://cloud.githubusercontent.com/assets/26199027/23644386/fdb12b14-036b-11e7-9c14-cb49bcfe9357.png)
 - Report can be viewed by accessing the index.html file (Path: target/Destination/index.html). By opening index.html file with browser, you will get a formatted web page with test report like below.
+
 ![alt tag](https://cloud.githubusercontent.com/assets/26199027/23644385/fdb1166a-036b-11e7-8a40-fa2dc8a67b09.png)
