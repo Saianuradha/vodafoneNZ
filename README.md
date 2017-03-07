@@ -51,5 +51,5 @@ Tools and practices used while developing framework:
 
 #Running Tests and Report accessing
 
-- Run the project as Maven test (Right click on pom.xml and Run as men clean test).
+- Run the project as Maven test (Right click on pom.xml and Run as mvn clean test).
 - Report can be viewed by accessing the index.html file (Path: target/Destination/index.html).
