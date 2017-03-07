@@ -16,6 +16,7 @@ public class DriverUtil {
 	private MyVodafonePage myVodafonePage;
 	private SignInPage signInPage;
 	public WebDriver setupDriver(){
+		initSystemProperty();
 		initDriver(Utilities.getConfigValue("browser"));
 		
 		driver.manage().window().maximize();
@@ -30,14 +31,20 @@ public class DriverUtil {
 		if(driver == null){
 			switch(browserType){
 			case "chrome":
-				String exePath = System.getProperty("user.dir") + "\\drivers\\chromedriver.exe";
-				System.setProperty("webdriver.chrome.driver", exePath);
 				driver = new ChromeDriver();
 				break;
 			default:
 				driver = new ChromeDriver();
 			}
 		}
+	
+	private void initSystemProperty() {
+		if (System.getProperty("os.name").contains("Win")) {
+			System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
+		} else if (System.getProperty("os.name").contains("Mac")) {
+			//System.setProperty("webdriver.chrome.driver", "drivers//chromedriver");
+		}
+
 	}
 	public void exit(){
 		driver.quit();
