@@ -37,7 +37,7 @@ public class DriverUtil {
 				driver = new ChromeDriver();
 			}
 		}
-	
+	}
 	private void initSystemProperty() {
 		if (System.getProperty("os.name").contains("Win")) {
 			System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
