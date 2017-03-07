@@ -51,5 +51,7 @@ Tools and practices used while developing framework:
 
 #Running Tests and Report accessing
 
-- Run the project as Maven test (Right click on pom.xml and Run as mvn clean test).
-- Report can be viewed by accessing the index.html file (Path: target/Destination/index.html).
+- Run the project as Maven test (Right click on pom.xml and Run as Maven test).
+![alt tag](https://cloud.githubusercontent.com/assets/26199027/23644386/fdb12b14-036b-11e7-9c14-cb49bcfe9357.png)
+- Report can be viewed by accessing the index.html file (Path: target/Destination/index.html). By opening index.html file with browser, you will get a formatted web page with test report like below.
+![alt tag](https://cloud.githubusercontent.com/assets/26199027/23644385/fdb1166a-036b-11e7-8a40-fa2dc8a67b09.png)
